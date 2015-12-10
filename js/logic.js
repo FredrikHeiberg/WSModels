@@ -1,6 +1,9 @@
 var typeOfModel = ["802.11 wireless LAN%1","802.11 state machine%2","802.11 layering%3", "WEP: MAC association%4", "Shared key challenge response autentication%5",
 "WEP crypto encapsulation%6", "WEP en-/decryption%7", "802.11i alphabet soup%8", "TKIP add-on to WEP%9", "TKIP key mixing (II)%10",
-"EAP 802.1X authentication%11", "EAPOL: pairwise temporal keys 4-way handshake%12"];
+"EAP 802.1X authentication%11", "EAPOL: pairwise temporal keys 4-way handshake%12","802.11 Physical Level Standards%13","CCMP MPDU Encapsulation%14",
+"CCMP Sender Side%15","CCMP Receiver Side%16","802.1X Concept%17","PEAP (TTLS)%18","Group Key Transport And Handshake%19",
+"TLS Handshake over/within EAP%20","EAP SIM%21","WEB-Captive Portal%22","VPN Authentication and Encryption%23", "TKIP Processing%24",
+"TKIP Decapsulation Block Diagram%25"];
 var usedModel = [];
 var round = 0;
 var identification = 0;
