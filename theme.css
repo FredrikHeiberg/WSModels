@@ -12,6 +12,10 @@ p {
   font-family: Sans-serif;
 }
 
+a {
+  color: white;
+}
+
 #container {
   margin-top: 100px;
   text-align: center;
