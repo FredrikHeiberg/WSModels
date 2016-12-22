@@ -1,19 +1,61 @@
-<head>
-	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
-	<link href="css/bootstrap.min.css" rel="stylesheet">
-</head>
+<div id=container>
 
-<body>
-	<div id="container">
-		<h1 id="model">Press "Next Model" to start</h1>
-		<br></br>
-		<button id="show" type="button" class="btn btn-default" arial-label="Show model">Show model</button>
-		<button id="next" type="button" class="btn btn-default" arial-label="Next model">Next model</button> 
-		<h4 id="round" >0</h4>
-				<div id="modelField"></div>
-	</div>	
+<h3>
+Har Astri og Fredrik juleferie?
+</h3>
+<p id=fri>
+NEI
+</p>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/logic.js"></script>
-</body>	
+<script>
+
+    CountDownTimer('12/23/2016 02:00 PM', 'countdown');
+
+    function CountDownTimer(dt, id)
+    {
+        var end = new Date(dt);
+
+        var _second = 1000;
+        var _minute = _second * 60;
+        var _hour = _minute * 60;
+        var _day = _hour * 24;
+        var timer;
+
+        function showRemaining() {
+            var now = new Date();
+            var distance = end - now;
+            if (distance < 0) {
+
+                clearInterval(timer);
+                document.getElementById(id).innerHTML = '0 dager 0 timer 0 minutter 0 sekunder';
+
+                return;
+            }
+            var days = Math.floor(distance / _day);
+            var hours = Math.floor((distance % _day) / _hour);
+            var minutes = Math.floor((distance % _hour) / _minute);
+            var seconds = Math.floor((distance % _minute) / _second);
+
+            document.getElementById(id).innerHTML = days + ' dager ';
+            document.getElementById(id).innerHTML += hours + ' timer ';
+            document.getElementById(id).innerHTML += minutes + ' minutter ';
+            document.getElementById(id).innerHTML += seconds + ' sekunder';
+            
+						if (days < 1 && hours < 1 && minutes < 1 && seconds < 1) {
+            	document.getElementById('fri').innerHTML = "JA";
+            }
+        }
+
+        timer = setInterval(showRemaining, 1000);
+    }
+
+
+</script>
+
+<div id="countdown"></div>
+<br>
+<a href="http://www.harmannenfalt.no/index.html">Har Mannen falt?</a>
+</div>
+
+
+<link rel="stylesheet" type="text/css" href="theme.css">
