@@ -7,17 +7,18 @@ Har Astri og Fredrik juleferie?
 NEI
 </p>
 
-<div id="soundbar" style="visibility: hidden">
+
+<div id="soundbar">
 <audio controls autoplay="true" loop id=sound>
   <source src="sound.wav" type="audio/mpeg">
 </audio>
-	</div>
-<a href="#noscroll" id="mute">Mute</a>
+</div>
 
+<a href="#noscroll" id="mute">Mute</a>
 
 <script>
 
-    CountDownTimer('12/23/2016 01:45 PM', 'countdown');
+    CountDownTimer('12/23/2016 01:34 PM', 'countdown');
 
     function CountDownTimer(dt, id)
     {
@@ -49,9 +50,12 @@ NEI
             document.getElementById(id).innerHTML += minutes + ' minutter ';
             document.getElementById(id).innerHTML += seconds + ' sekunder';
             
-						if (days < 1 && hours < 1 && minutes < 1 && seconds < 1) {
-            	document.getElementById('fri').innerHTML = "JA";
+			if (days < 1 && hours < 1 && minutes < 1 && seconds < 1) {
+                document.getElementById('fri').innerHTML = "JA";
+            }
 
+            if (document.getElementById('fri').innerHTML == "JA") {
+                document.getElementById("soundbar").innerHTML = '<audio controls autoplay="true" loop id=sound><source src="celebrate.wav" type="audio/mpeg"></audio>';
             }
         }
 
@@ -76,6 +80,5 @@ document.getElementById('mute').addEventListener('click', function (e)
 <div id="countdown"></div>
 <br>
 <a href="http://www.harmannenfalt.no/index.html">Har Mannen falt?</a>
-	
 </div>
 <link rel="stylesheet" type="text/css" href="theme.css">
