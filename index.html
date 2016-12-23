@@ -8,10 +8,13 @@ NEI
 </p>
 
 
+<audio controls autoplay="true" loop id=sound>
+  <source src="sound.wav" type="audio/mpeg">
+</audio>
 
 
+<a href="#noscroll" id="mute">Mute</a>
 
-	
 <script>
 
     CountDownTimer('12/23/2016 01:45 PM', 'countdown');
@@ -48,6 +51,9 @@ NEI
             
 						if (days < 1 && hours < 1 && minutes < 1 && seconds < 1) {
             	document.getElementById('fri').innerHTML = "JA";
+		document.getElementById('sound').innerHTML = '<audio controls autoplay="true" loop>
+  <source src="sound.wav" type="audio/mpeg">
+</audio>';
             }
         }
 
@@ -56,8 +62,8 @@ NEI
 
 
 </script>
-	
-	<script>
+
+<script>
 var audio = document.getElementById('sound');
 
 document.getElementById('mute').addEventListener('click', function (e)
@@ -73,6 +79,4 @@ document.getElementById('mute').addEventListener('click', function (e)
 <br>
 <a href="http://www.harmannenfalt.no/index.html">Har Mannen falt?</a>
 </div>
-
-
 <link rel="stylesheet" type="text/css" href="theme.css">
