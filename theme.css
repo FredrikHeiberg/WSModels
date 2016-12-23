@@ -28,3 +28,7 @@ a {
 #fri {
   color: white;
 }
+
+audio { 
+   display:none;
+}
