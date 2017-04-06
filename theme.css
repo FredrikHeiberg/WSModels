@@ -3,7 +3,7 @@ body {
 }
 
 h3 {
-  color: white;
+  color: black;
   font-family: Sans-serif;
 }
 
@@ -18,11 +18,11 @@ p {
 }
 
 #countdown {
-  color: white;
+  color: black;
 }
 
 #fri {
-  color: white;
+  color: black;
 }
 
 audio { 
@@ -30,7 +30,7 @@ audio {
 }
 
 a {
-	color: white;
+	color: black;
 }
 
 #soundbar {
