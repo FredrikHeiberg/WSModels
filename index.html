@@ -18,7 +18,7 @@ NEI
 
 <script>
 
-    CountDownTimer('04/05/2018 16:00 PM', 'countdown');
+    CountDownTimer('Dec 21, 2017 16:00:00', 'countdown');
 
     function CountDownTimer(dt, id)
     {
@@ -44,8 +44,6 @@ NEI
             var hours = Math.floor((distance % _day) / _hour);
             var minutes = Math.floor((distance % _hour) / _minute);
             var seconds = Math.floor((distance % _minute) / _second);
-	    
-	    document.write(endTest);
 		
             document.getElementById(id).innerHTML = days + ' Dager ';
             document.getElementById(id).innerHTML += hours + ' Timer ';
