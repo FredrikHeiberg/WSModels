@@ -36,7 +36,7 @@ NEI
             if (distance < 0) {
 
                 clearInterval(timer);
-                document.getElementById(id).innerHTML = '_day dager 0 timer 0 minutter 0 sekunder';
+                document.getElementById(id).innerHTML = '0 dager 0 timer 0 minutter 0 sekunder';
 
                 return;
             }
@@ -45,10 +45,10 @@ NEI
             var minutes = Math.floor((distance % _hour) / _minute);
             var seconds = Math.floor((distance % _minute) / _second);
 
-            document.getElementById(id).innerHTML = days + ' dager ';
-            document.getElementById(id).innerHTML += hours + ' timer ';
-            document.getElementById(id).innerHTML += minutes + ' minutter ';
-            document.getElementById(id).innerHTML += seconds + ' sekunder';
+            document.getElementById(id).innerHTML = days + ' Dager ';
+            document.getElementById(id).innerHTML += hours + ' Timer ';
+            document.getElementById(id).innerHTML += minutes + ' Minutter ';
+            document.getElementById(id).innerHTML += seconds + ' Sekunder';
             
 			if (days < 1 && hours < 1 && minutes < 1 && seconds < 1) {
                 document.getElementById('fri').innerHTML = "JA";
