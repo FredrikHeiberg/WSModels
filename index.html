@@ -44,7 +44,9 @@ NEI
             var hours = Math.floor((distance % _day) / _hour);
             var minutes = Math.floor((distance % _hour) / _minute);
             var seconds = Math.floor((distance % _minute) / _second);
-
+	    
+	    document.write(days);
+		
             document.getElementById(id).innerHTML = days + ' Dager ';
             document.getElementById(id).innerHTML += hours + ' Timer ';
             document.getElementById(id).innerHTML += minutes + ' Minutter ';
