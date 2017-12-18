@@ -23,7 +23,7 @@ NEI
     function CountDownTimer(dt, id)
     {
         var end = new Date(dt);
-
+	var endTest = new Date('04/05/2018 16:00 PM');
         var _second = 1000;
         var _minute = _second * 60;
         var _hour = _minute * 60;
@@ -45,7 +45,7 @@ NEI
             var minutes = Math.floor((distance % _hour) / _minute);
             var seconds = Math.floor((distance % _minute) / _second);
 	    
-	    document.write(now);
+	    document.write(endTest);
 		
             document.getElementById(id).innerHTML = days + ' Dager ';
             document.getElementById(id).innerHTML += hours + ' Timer ';
